@@ -181,6 +181,14 @@ jobs:
       - run: |
           docker build -t ml-app .
           docker run -d -p 5000:5000 ml-app
+          
+requirements.txt
+flask==3.0.3
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.2
+joblib==1.4.2
+
 
 ✅ To test locally
 python train.py
